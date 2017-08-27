@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+</head>
+<body>
+<div id="header">
+<div id="header1">
+<h1 style=" font-family:Forte;">Discussion Forum</h1>
+</div>
+</div>
+<br<br>
+<div id="login">
+<form action="main.php" method="Post">
+<center>
+<div id="login1">
+<fieldset>
+<legend><h2>Login:</h2></legend>
+<b>Username:  </b><input type="text" placeholder="Username" id="t1" required><br><br>
+<b>Password:  </b><input type="text" placeholder="Password" id="t2" required><br><br>
+<Button type="button" class="b1" >Login</button><br><br>
+</fieldset>
+</div>
+<br>
+<center><h2>Or</h2></center>
+<div id="signup">
+<fieldset>
+<legend><h2>Sign-Up:</h2></legend>
+<a href="F:\DFsignup.html"><Button type="button" class="b2" >Create New Account</button></a><br><br>
+</fieldset>
+</div>
+</center>
+</form>
+</div>
+<br>
+<div id="footer"><center><p><b><br>&copy;opy Rights<br>All &reg;ights Reserved</b></p></center>
+</div>
+<style>
+#header
+{
+ margin-top:5px;
+ left-margin:10px;
+ background-color:navy;
+ color:white;
+ width:1335px;
+ height:100px;
+}
+#header1
+{
+ padding-top:7px;
+ margin-left:20px;
+}
+#login
+{
+ background-color:ghostwhite;
+ height:640px;
+ width:1335px;
+ border-radius:20px;
+ margin-top:10px;
+}
+#login1
+{
+ width:450px;
+ height:300px;
+}
+#signup
+{
+ width:450px;
+ height:200px;
+}
+.b1
+{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline:none;
+  color:White;
+  background-color:Darkblue;
+  border: none;
+  border-radius: 10px;
+}
+
+.b1:hover
+{
+ background-color:Blue;
+ -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b1:active
+{
+  background-color:Darkblue;
+  transform: translateY(4px);
+}
+.b2
+{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline:none;
+  color:White;
+  background-color:Darkblue;
+  border: none;
+  border-radius: 10px;
+}
+
+.b2:hover
+{
+ background-color:Blue;
+ -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b2:active
+{
+  background-color:Darkblue;
+  transform: translateY(4px);
+}
+input[type=text],select
+{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid Blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
+#footer
+{
+ background-color:silver;
+ border-radius:15px;
+ width:1335px;
+ height:100px;
+ padding-top:45px;
+}
+</style>
+</body>
+</html>

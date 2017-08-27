@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>DF Signup Page</title>
+</head>
+<body>
+<div id="header">
+<h1>Create your Account</h1>
+</div>
+<center>
+<div id="main">
+<div id="signup">
+<fieldset>
+<legend><h2>Sign-Up:</h2></legend>
+<b>First-name:     </b><input type="text" placeholder="FirstName" id="t1" required><br><br>
+<b>Last-name:      </b><input type="text" placeholder="Lastname" id="t2" required><br><br>
+<b>Date of Birth:  </b><input type="date" id="d1" value="1997-01-01" required><br><br>
+<b>Department:     </b><input type="text" placeholder="Computer Science" id="t3" ><br><br>
+<b>Year:           </b><input type="number" placeholder="1(or)2(or)3(or)4" id="n1" required><br><br>
+<b>Register No:    </b><input type="number" placeholder="312315104..." id="n2" required><br><br>
+<b>Roll No:    </b><input type="text" placeholder="15cs..." id="t4" required><br><br>
+<b>Password:  </b><input type="text" placeholder="Password" id="t5" required><br><br>
+<b>Re-Type Password:  </b><input type="text" placeholder="Password" id="t6" required><br><br>
+<input type="checkbox"  value="Terms" name="cb1" required><b>I agree to the <a href="#">Terms and Conditions<a>.</b><br><br>
+<Button type="button" class="b1" >Signup</button><br><br>
+</fieldset>
+</div>
+</center>
+</div>
+</div>
+<style>
+#header
+{
+ margin-top:5px;
+ left-margin:10px;
+ background-color:navy;
+ color:white;
+ width:1330px;
+ height:100px;
+ padding-top:7px;
+ padding-left:10px;
+ margin-left:2px;
+ font-family:Forte;
+}
+#main
+{
+ background-color:ghostwhite;
+ height:900px;
+ width:1335px;
+ border-radius:20px;
+ margin-top:10px;
+}
+#signup
+{
+  width:650px;
+  height:800px;
+}
+input[type=text],select
+{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid Blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
+input[type=number],select
+{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid Blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
+input[type=date],select
+{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid Blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
+.b1
+{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline:none;
+  color:White;
+  background-color:Darkblue;
+  border: none;
+  border-radius: 10px;
+}
+
+.b1:hover
+{
+    background-color:Blue;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b1:active
+{
+  background-color:Darkblue;
+  transform: translateY(4px);
+}
+</style>
+</body>
+</html>
