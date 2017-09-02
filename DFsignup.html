@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>DF Signup Page</title>
+<script type="text/javascript" src="DFSignup.js"></script>
 </head>
 <body>
 <div id="header">
@@ -8,24 +10,29 @@
 </div>
 <center>
 <div id="main">
+<form name="f1">
 <div id="signup">
 <fieldset>
 <legend><h2>Sign-Up:</h2></legend>
-<b>First-name:     </b><input type="text" placeholder="FirstName" id="t1" required><br><br>
-<b>Last-name:      </b><input type="text" placeholder="Lastname" id="t2" required><br><br>
-<b>Date of Birth:  </b><input type="date" id="d1" value="1997-01-01" required><br><br>
-<b>Department:     </b><input type="text" placeholder="Computer Science" id="t3" ><br><br>
-<b>Year:           </b><input type="number" placeholder="1(or)2(or)3(or)4" id="n1" required><br><br>
-<b>Register No:    </b><input type="number" placeholder="312315104..." id="n2" required><br><br>
-<b>Roll No:    </b><input type="text" placeholder="15cs..." id="t4" required><br><br>
-<b>Password:  </b><input type="text" placeholder="Password" id="t5" required><br><br>
-<b>Re-Type Password:  </b><input type="text" placeholder="Password" id="t6" required><br><br>
+<div class="e">* Required</div><br>
+<label for="i1">First-name:</label><input type="text" name="i1" placeholder="FirstName" id="fn" autofocus="autofocus" onblur="fnameValid()" required><span class="e" id="s1">*</span><div id="fne"></div><br>
+<label for="i2">Last-name:</label><input type="text" name="i2" placeholder="Lastname" id="ln" onblur="lnameValid()" required><span class="e" id="s2">*</span><div id="lne"></div><br>
+<label for="i3">Date of Birth:</label><input type="date" id="d1" name="i3" value="1997-01-01" required><br><br>
+<label for="i4">Department:</label><input type="text" name="i4" placeholder="Computer Science" id="t3" onblur="checkEmpty(this,3)"><span class="e">*</span><br><br>
+<label for="i5">Year:</label><input type="number" name="i5" placeholder="1(or)2(or)3(or)4" min="1" max="4" id="n1" onblur="checkEmpty(this,4)" ><span class="e">*</span><br><br>
+<label for="i6">Register No:</label><input type="number" name="i6" placeholder="312315104..." id="n2" maxlength="10" onblur="checkEmpty(this,5)" ><span class="e">*</span><br><br>
+<label for="i7">Roll No:</label><input type="text"  name="i7" placeholder="15cs..." id="t4" onblur="checkEmpty(this,6)"><span class="e">*</span><br><br>
+<label for="i8">Username:</label><input type="text" name="i8" placeholder="example_123" id="un" onblur="unameValid(this)"><span class="e">*</span><div id="une"></div><br>
+<label for="i9">Password:</label><input type="password" name="i9" placeholder="Password" id="pword" onblur="pwordValid(this)"><span class="e">*</span><div id="pe"></div><br>
+<label for="i10">Re-Type Password:</label><input type="password" name="i10" placeholder="Password" id="t6" onblur="pwordCheck(this)"><span class="e">*</span><div id="rpe"></div><br>
 <input type="checkbox"  value="Terms" name="cb1" required><b>I agree to the <a href="#">Terms and Conditions<a>.</b><br><br>
-<Button type="button" class="b1" >Signup</button><br><br>
+<input type="button" class="b1" value="Signup">
+<br><br>
 </fieldset>
 </div>
 </center>
 </div>
+</form>
 </div>
 <style>
 #header
@@ -76,6 +83,17 @@ input[type=number],select
     box-sizing: border-box;
     background-color:lightgray;
 }
+input[type=password],select
+{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid Blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:lightgray;
+}
 input[type=date],select
 {
     width:60%;
@@ -96,15 +114,15 @@ input[type=date],select
   text-align: center;
   text-decoration: none;
   outline:none;
-  color:White;
-  background-color:Darkblue;
+  color:white;
+  background-color:darkblue;
   border: none;
   border-radius: 10px;
 }
 
 .b1:hover
 {
-    background-color:Blue;
+    background-color:blue;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -112,8 +130,23 @@ input[type=date],select
 
 .b1:active
 {
-  background-color:Darkblue;
+  background-color:darkblue;
   transform: translateY(4px);
+}
+label
+{
+  display:inline-block;
+  width:150px;
+  text-align:right;
+  font-weight: bolder;
+  margin-left:0px;
+}
+fieldset{
+margin:0px auto;
+}
+.e
+{
+  color: red;
 }
 </style>
 </body>
