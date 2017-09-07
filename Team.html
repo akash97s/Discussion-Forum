@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html 
+{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+.column
+ {
+  float: left;
+  width: 33.3%;
+  height:25%;
+  margin-bottom: 16px;
+  padding: 0 25px;
+}
+@media (max-width: 650px)
+ {
+  .column
+ {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card 
+{
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color:White;
+}
+
+.container
+ {
+  padding: 0 16px;
+}
+
+.container::after, .row::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title
+{
+  color: grey;
+}
+
+.button
+ {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover 
+{
+  background-color: #555;
+}
+</style>
+</head>
+<body bgcolor="GhostWhite">
+<center>
+<h2>Meet The Team</h2>
+</center>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Akash.jpg" alt="Akash" height="400px" style="width:100%">
+      <div class="container">
+        <h2>Akash Selvakumar</h2>
+        <p class="title">Designer and Developer</p>
+        <b><p>while(no success) { tryagain(); }</p></b>
+        <p>akashselvae7@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Abdun.jpg" alt=Abdun"  height="400px" style="width:100%">
+      <div class="container">
+        <h2>Abdun</h2>
+        <p class="title">Designer and Developer</p>
+        <B><p>Eat . Sleep . Code . Repeat</p></B>
+        <p>nihaal.an@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="Aswin.jpg" alt="Aswin"  height="400px" style="width:100%">
+      <div class="container">
+        <h2>Aswin</h2>
+        <p class="title">Designer and Developer</p>
+        <b><p>Keep Calm and Code</p></b>
+        <p>achuthepichu@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
